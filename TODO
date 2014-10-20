@@ -1,0 +1,45 @@
++ Porting issues (issues that apply to all ports)
+	- Menu option for leaving a review has a link to the webOS app catalog...
+
++ Resume support
+	- Save state every x secons so that it can be resumed properly if the
+	  browser or machine crashes.
+
++ Bugs
+	- In tri-peaks after an undo it will sometimes still think there are no
+	  playable cards.
+
+	- Max aspect ratio doesn't work for gaps... no idea why...
+
+	- Tapping on the deck in klondike doesn't always flip cards... Seen on the
+	  playbook.
+
+	- Detecting the closest stack only takes into account the bottom card in the
+	  stack.
+
+	- In tri-peaks some taps on the background are flipping the deck...
+
+	- In tri-peaks cards may not always flip if they are also being highlighted
+	  (Seen on the playbook)
+
+	- Users like to double tap.... ignore a second tap within a specific time
+	  period...
+
++ Issues for phones
+	- What layout should be used for games like freecell? The free cells and
+	  foundations on the sides? It is hard to get that right...
+
+	- Should some games be left out of phone versions?
+
+	- Most cardsets are not usable on phones. They should be disabled if the
+	  screen size is too small. Brandon may provide additional small sets...
+
+	- Card counters are too big when cards are very small
+
++ Feature Requests
+	- "No playable moves" popup for games where it is possible, like klondike
+
+	- Add a "pause" button
+
+	- 40 Thieves
+

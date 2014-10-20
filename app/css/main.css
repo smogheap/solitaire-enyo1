@@ -1,0 +1,425 @@
+html
+{
+	margin:							0px;
+	height:							100%;
+}
+
+body
+{
+	margin:							0px;
+	font-family:					Prelude, Prelude Medium, Segoe UI, Arial, Helvetica, Sans-Serif;
+	font-size:						14pt;
+	cursor:							pointer;
+	background-color:				#e4e4e2;
+}
+
+.skinny .enyo-toolbar
+{
+	zoom:							0.75;
+}
+
+/*
+	Open the prefs dialog on the top of the screen for devices that don't have
+	a very tall screen.
+*/
+.wide .prefsGroup
+{
+	display:						inline-block;
+	float:							left;
+	vertical-align:					top;
+
+	box-sizing:						border-box;
+	width:							31%;
+	min-width:						265px;
+	margin-left:					1%;
+	margin-right:					1%;
+}
+
+.prefsClose
+{
+	display:						none;
+}
+
+.wide .prefsClose
+{
+	display:						block;
+}
+
+.wide .prefsToolbar
+{
+	display:						none;
+}
+
+.timer,
+.status
+{
+	color:							#ccc;
+}
+
+.cursor
+{
+	position:						fixed;
+	left:							0px;
+	top:							0px;
+
+	border:							4px solid white;
+	margin:							-4px;
+
+	opacity:						0.5;
+}
+
+.cursor.highlight
+{
+	opacity:						1.0;
+}
+
+.wideButton .enyo-button-icon
+{
+	width:							64px !important;
+}
+
+.StarIcon
+{
+	float:							right;
+	position:						relative;
+
+	left:							9px;
+	top:							-22px;
+
+	height:							24px;
+	width:							50px;
+
+	background:						url(../images/star.png) center 0px no-repeat;
+}
+
+.Favorite .StarIcon
+{
+	background:						url(../images/star.png) center -24px no-repeat !important;
+}
+
+.Disabled
+{
+	color:							grey;
+}
+
+/* Style the toolbar to look similar to those used in ICS */
+.AndroidToolbar
+{
+	background:						black;
+	-webkit-border-image:			none;
+	border:							none;
+	border-bottom:					2px solid #38c0f4;
+}
+
+.AndroidToolbar .enyo-grouped-toolbutton
+{
+	-webkit-border-image:			none;
+}
+
+/* items */
+.ChooseGame
+{
+	background-color:				#f1f1f1;
+}
+
+.ChooseGame .enyo-item.selected
+{
+	background-color:				#d1e5f5;
+	border-color:					#B3d9f2
+}
+
+/* DemoGame Layout */
+.DemoGame .card
+{
+	width:							10%;
+}
+
+.freecell .card,
+.freecell .CardStack
+{
+	width:							10%;
+	margin:							1.25%;
+}
+
+.videopoker .card,
+.videopoker .CardStack
+{
+	width:							12%;
+	margin:							1%;
+}
+
+.golf .card,
+.golf .CardStack,
+.klondike .card,
+.klondike .CardStack,
+.yukon .card,
+.yukon .CardStack,
+.canfield .card,
+.canfield .CardStack,
+.spiderette .card,
+.spiderette .CardStack,
+.pyramid .card,
+.pyramid .CardStack
+{
+	width:							12%;
+	margin:							1.14%;
+	margin-bottom:					0px;
+}
+
+.gypsy .card,
+.gypsy .CardStack
+{
+	width:							9%;
+	margin:							1.07%;
+	margin-bottom:					0px;
+}
+
+.spider .card,
+.spider .CardStack,
+.westcliff .card,
+.westcliff .CardStack,
+.doublePyramid .card,
+.doublePyramid .CardStack,
+.tripeaks .card,
+.tripeaks .CardStack,
+.seahaven .card,
+.seahaven .CardStack
+{
+	width:							8%;
+	margin:							1%;
+	margin-bottom:					0px;
+}
+
+.gaps .card,
+.gaps .CardStack
+{
+	width:							7%;
+	margin:							0.35%;
+	margin-bottom:					0px;
+}
+
+.blackhole .card,
+.blackhole .CardStack
+{
+	width:							10%;
+	margin-left:					5%;
+	margin-right:					5%;
+	margin-top:						2%;
+	margin-bottom:					2%;
+}
+.blackhole .dummy
+{
+	margin:							0%;
+	width:							10%;
+}
+
+.acesup .card,
+.acesup .CardStack
+{
+	width:							15%;
+	margin:							5%;
+	margin-bottom:					0px;
+}
+
+.acesup5 .card,
+.acesup5 .CardStack
+{
+	width:							15%;
+	margin:							2%;
+	margin-bottom:					0px;
+}
+
+.acesup6 .card,
+.acesup6 .CardStack
+{
+	width:							12%;
+	margin:							2%;
+	margin-bottom:					0px;
+}
+
+.card
+{
+	display:						block;
+	border-width:					0px;
+	margin:							0px !important;
+}
+
+.desktop .card
+{
+	/*
+		Having a shadow image forces chrome to render the card. For some odd
+		reason it refuses to in some cases without this.
+	*/
+	-webkit-border-image:			url(../images/noshadow.png) 1 1 1 1 stretch;
+	border-style:					solid;
+
+	border-width:					1px;
+	margin-top:						-1px !important;
+	margin-left:					-1px !important;
+}
+
+.card.highlight
+{
+	-webkit-border-image:			url(../images/shadow.png) 25 25 25 25 stretch;
+	border-width:					25px;
+	margin-top:						-25px !important;
+	margin-left:					-25px !important;
+}
+
+.card.hidden
+{
+	display:						none;
+}
+
+/* High Scores */
+#solitaire2_scores_when
+{
+	font-size:						12px;
+	text-align:						right;
+	margin-top:						-18px;
+	color:							#6f6f6f;
+}
+
+#solitaire2_scores_score
+{
+	margin:							4px 0 -24px 0;
+	text-align:						right;
+}
+
+#solitaire2_scores_score, #solitaire2_scores_duration, #solitaire2_scores_gamenum, #solitaire2_scores_moves
+{
+	font-size:						15px;
+}
+
+#solitaire2_scores_duration, #solitaire2_scores_moves
+{
+	display:						inline;
+}
+
+#solitaire2_scores_duration:after
+{
+	content:						", ";
+}
+
+#solitaire2_scores_gamenum:before
+{
+	content:						"Game #";
+}
+
+#solitaire2_scores_score
+{
+	margin:							4px -5px -24px 120px;
+	text-align:						center;
+	background:						#808080;
+	padding:						2px 5px;
+	border-radius:					15px;
+	color:							white;
+	font-weight:					bold;
+}
+
+#solitaire2_scores_score.win
+{
+	background:						#136f2f;
+}
+
+#solitaire2_scores_score.lose
+{
+	background:						#71150b;
+}
+
+
+.totalScore
+{
+	background-color:				#888;
+	color:							white;
+	padding:						5px;
+	text-align:						right;
+}
+
+.hint
+{
+	-webkit-transition:				opacity 0.5s linear;
+
+	opacity:						0.0;
+	color:							white;
+	background:						black;
+	border-radius:					15px;
+	border:							3px solid white;
+
+	position:						absolute;
+	left:							30%;
+	right:							30%;
+	bottom:							20px;
+
+	padding:						10px;
+	text-align:						center;
+
+	pointer-events:					none;
+}
+
+.count
+{
+	font-size:						12px;
+	font-weight:					bold;
+
+	position:						absolute;
+
+	color:							white;
+	background-position:			center;
+	background-repeat:				no-repeat;
+	background-image:				url(../images/bubble.png);
+
+	width:							32px;
+	padding:						16px 0px 16px 0px;
+
+	text-align:						center;
+
+	pointer-events:					none;
+
+	z-index:						1;
+}
+
+.playArea
+{
+	position:						absolute;
+	left:							0px;
+	top:							0px;
+	right:							0px;
+	bottom:							0px;
+}
+
+.TableTop
+{
+	/*
+		Set position, but don't actually set left or top.  This will make the
+		container a proper anchor for the card stacks so that their position is
+		relative to this.
+	*/
+	position:						relative;
+
+	color:							white;
+}
+
+/* Game colours */
+.green {							background-color: #136b2c; }
+.blue {								background-color: #2c52b3; }
+.black {							background-color: #1a1b1b; }
+.orange {							background-color: #e06325; }
+.red {								background-color: #a61919; }
+.yellow {							background-color: #c4aa32; }
+
+.brightyellow {						background-color: #ffff00; }
+.brown {							background-color: #8B7355; }
+.coral {							background-color: #ff7f50; }
+.aquamarine {						background-color: #7fffd4; }
+.olive {							background-color: #6E8B3D; }
+.purple {							background-color: #8B0A50; }
+.pink {								background-color: #FF1493; }
+.navy {								background-color: #000080; }
+
+.dark {								color: white }
+.light {							color: black }
+
+.felt {								background-image: url(../images/felt-alpha.png); }
+
+

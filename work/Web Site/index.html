@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Solitaire Universe</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="solitaire.css" />
+
+		<link rel="icon" type="image/png" href="icon-16x16.png" />
+	</head>
+	<body>
+		<header>
+			<h1>Solitaire Universe for WebOS</h1>
+		</header>
+		<aside>
+<!--
+			<img src="images/icon.png" alt="icon" width="64" height="64" /><br />
+-->
+
+			<h1>Download:</h1>
+
+			<div class="platform">
+				<a href="https://chrome.google.com/webstore/detail/panaklddkchgikjdpgbggankigfjbgjk" target="_blank">
+					<img src="images/spacer.png" style="
+						background-image:		url(images/download-platforms.png);
+						margin-right:			10px;
+						background-repeat:		no-repeat;
+						background-position:	0px -300px;"/>
+					<span>Chrome</span>
+				</a>
+			</div>
+
+			<div class="platform">
+				<a href="http://solitaireuniverse.net/app" target="_blank">
+					<img src="images/spacer.png" style="
+						background-image:		url(images/download-platforms.png);
+						margin-right:			10px;
+						background-repeat:		no-repeat;
+						background-position:	0px -400px;"/>
+					<span>Safari</span>
+				</a>
+			</div>
+
+			<div class="platform">
+				<a href="https://developer.palm.com/appredirect/?packageid=net.minego.solitaire2" target="_blank">
+					<img src="images/spacer.png" style="
+						background-image:		url(images/download-platforms.png);
+						margin-right:			10px;
+						background-repeat:		no-repeat;
+						background-position:	0px 0px;"/>
+					<span>HP&nbsp;TouchPad</span>
+				</a>
+			</div>
+
+			<div class="platform">
+				<a href="https://developer.palm.com/appredirect/?packageid=net.minego.solitaire" target="_blank">
+					<img src="images/spacer.png" style="
+						background-image:		url(images/download-platforms.png);
+						margin-right:			10px;
+						background-repeat:		no-repeat;
+						background-position:	0px 0px;"/>
+					<span>HP&nbsp;webOS&nbsp;phones</span>
+				</a>
+			</div>
+
+			<div class="platform">
+				<a href="http://www.amazon.com/gp/product/B00792KU02" target="_blank">
+					<img src="images/spacer.png" style="
+						background-image:		url(images/download-platforms.png);
+						margin-right:			10px;
+						background-repeat:		no-repeat;
+						background-position:	0px -100px;"/>
+					<span>Android</span>
+				</a>
+			</div>
+
+			<div class="platform">
+				<a href="http://appworld.blackberry.com/webstore/content/84311/?lang=en" target="_blank">
+					<img src="images/spacer.png" style="
+						background-image:		url(images/download-platforms.png);
+						margin-right:			10px;
+						background-repeat:		no-repeat;
+						background-position:	0px -150px;"/>
+					<span>Blackberry&nbsp;Playbook</span>
+				</a>
+			</div>
+
+
+
+
+			<h1>Coming Soon:</h1>
+
+			<div class="platform">
+				<img src="images/spacer.png" style="
+					background-image:		url(images/download-platforms.png);
+					margin-right:			10px;
+					background-repeat:		no-repeat;
+					background-position:	0px -50px;"/>
+				<span>iPad</span>
+			</div>
+
+			<h1>Contact:</h1>
+
+			<p><a href="https://twitter.com/webossolitaire" target="_blank">twitter</a></p>
+			<p><a href="mailto:support@minego.net">email</a></p>
+		</aside>
+
+		<section id="games">
+			<p>
+				A collection of many entertaining types of solitaire, including
+				freecell, klondike, spider, tri-peaks and many more!
+			</p>
+
+			<p>
+				Includes many advanced solitaire features:
+				<ul>
+					<li>
+						Includes over 60 different types of solitaire including
+						many variants of FreeCell, Klondike, Spider, Canfield,
+						Golf and more!
+					</li>
+
+					<li>Unlimited undo</li>
+
+					<li>5 beautiful cardsets to choose from</li>
+
+					<li>
+						Many options to make the cards look the way you like
+						them
+					</li>
+
+					<li>Detailed high scores tracking</li>
+
+					<li>Player profiles</li>
+
+					<li>
+						Smart auto play. Tap on a deck of cards to move the
+						whole deck
+					</li>
+
+					<li>
+						Smart auto drag. The number of cards being drug will
+						automatically adjust based on the destination
+					</li>
+
+					<li>
+						Play game by number (freecell numbers match other
+						versions of freecell)
+					</li>
+				</ul>
+			</p>
+		</section>
+
+		<script>
+			function viewScreenshot(num)
+			{
+				document.getElementById('viewer').src = 'images/screenshot' + num + '.jpg';
+			}
+		</script>
+
+		<section id="screenshots">
+			<img src="images/thumbnail1.jpg" onclick="viewScreenshot(1);" />
+			<img src="images/thumbnail2.jpg" onclick="viewScreenshot(2);" />
+			<img src="images/thumbnail3.jpg" onclick="viewScreenshot(3);" />
+
+			<div id="screenshot">
+				<img id="viewer" src="images/screenshot1.jpg" />
+			</div>
+
+		</section>
+
+		<section id="copyright">
+			© Micah N Gorrell, 2009-2012
+		</section>
+	</body>
+</html>

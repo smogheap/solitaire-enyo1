@@ -1,0 +1,17 @@
+{
+	"name":						"Solitaire Universe",
+	"description":				"A collection of many entertaining types of solitaire, including freecell, klondike, spider, tri-peaks and many more!",
+	"version":					"autoversion",
+
+	"app": {
+		"launch": {
+			"web_url": "http://www.solitaireuniverse.net/app"
+		}
+	},
+
+	"icons": {
+		"16":					"icon-16x16.png",
+		"128":					"icon-128x128.png"
+	}
+}
+

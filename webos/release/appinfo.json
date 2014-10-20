@@ -1,0 +1,36 @@
+{
+	"id":			"net.minego.solitaire2",
+	"version":		"autoversion",
+	"vendor":		"minego",
+	"type":			"web",
+	"main":			"index.html",
+	"title":		"Solitaire",
+	"icon":			"icon.png",
+	"splashicon":	"icon-256x256.png",
+	"uiRevision":	2,
+
+	"keywords":	[
+		"solitaire",
+		"patience",
+		"cards",
+		"freecell",
+		"klondike",
+		"spider",
+		"spiderette",
+		"golf",
+		"canfield",
+		"acesup",
+		"pyramid",
+		"gaps",
+		"spaces",
+		"montana"
+	],
+
+	"allowed": [
+		"freecell",
+		"klondike:draw 3",
+		"klondike:vegas draw 3",
+		"golf:tripeaks"
+	]
+}
+

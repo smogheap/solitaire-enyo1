@@ -1,0 +1,17 @@
+{
+	"id":			"net.minego.solitaire2",
+	"version":		"autoversion",
+	"vendor":		"minego",
+	"type":			"web",
+	"main":			"index.html",
+	"title":		"Solitaire Universe",
+	"icon":			"icon.png",
+	"uiRevision":	2,
+
+	"allowed": [
+		"freecell",
+		"klondike:draw 3",
+		"klondike:vegas draw 3",
+		"golf:tripeaks"
+	]
+}

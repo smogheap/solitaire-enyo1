@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<application
+	xmlns="http://ns.adobe.com/air/application/2.6"
+	minimumPatchLevel="0">
+
+	<id>net.minego.solitaire2</id>
+	<name>
+		<text xml:lang="en">Solitaire Universe</text>
+	</name>
+
+	<versionNumber>autoversion</versionNumber>
+	<versionLabel>v1</versionLabel>
+
+	<filename>Solitaire Universe</filename>
+	<description>
+		<text xml:lang="en">A collection of many different types of solitaire</text>
+	</description>
+
+	<copyright>Copyright 2011-2012, Micah N Gorrell</copyright>
+
+	<initialWindow>
+		<content>index.html</content>
+
+		<title>Solitaire Universe</title>
+		<systemChrome>standard</systemChrome>
+		<transparent>false</transparent>
+		<minimizable>true</minimizable>
+		<maximizable>true</maximizable>
+		<resizable>true</resizable>
+		<minSize>600 600</minSize>
+		<visible>true</visible>
+	</initialWindow>
+
+	<installFolder>minego/Solitaire Universe</installFolder>
+	<programMenuFolder>Solitaire Universe</programMenuFolder>
+
+	<icon>
+		<image16x16>icon-16x16.png</image16x16>
+		<image32x32>icon-32x32.png</image32x32>
+		<image48x48>icon-48x48.png</image48x48>
+		<image128x128>icon-128x128.png</image128x128>
+	</icon>
+
+	<customUpdateUI>false</customUpdateUI>
+	<allowBrowserInvocation>true</allowBrowserInvocation>
+</application>
+

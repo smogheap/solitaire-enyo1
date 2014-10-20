@@ -1,0 +1,161 @@
+html {
+	margin: 0;
+}
+
+body {
+	width: 1024px;
+	position: relative;
+	margin: 0 auto;
+	background: black;
+	color: white;
+	font-family: Calibri, "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+header {
+	width: 1024px;
+	height: 350px;
+	background: url(images/Header.jpg);
+	margin: 0 0 -114px 0;
+
+	border-right: 1px solid #424242;
+	border-left: 1px solid #424242;
+}
+
+header h1{
+	margin: 0;
+	visibility: hidden;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+aside {
+	float: right;
+	margin: 0 -2px 0 0;
+	width: 250px;
+	text-align: center;
+	font-size: 12px;
+	border-right: 1px solid #424242;
+}
+
+aside p{
+	margin: 20px 5px;
+}
+
+aside #downloadlink{
+	background: green;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 5px 10px 4px 10px;
+	border-radius: 5px;
+}
+
+section {
+	width: 690px;
+	border-bottom: 1px solid #424242;
+	border-right: 1px solid #424242;
+	border-left: 1px solid #424242;
+	overflow: auto;
+	margin: 0;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+section h2{
+	line-height: 61px;
+	margin: 10px 0 0;
+	padding: 0;
+	vertical-align: top;
+	font-size: 20px;
+}
+
+section h3{
+	margin: 0 0 0 15px;
+	font-size: 20px;
+}
+
+#games{
+	background: url(images/Games-Background.png) no-repeat 0 80px;
+}
+
+#games h2 em{
+	background: url(images/Three-Free-Games.png);
+	width: 203px;
+	height: 61px;
+	display: inline-block;
+	color: transparent;
+}
+
+#games ul {
+	margin: 20px 0 30px 15px;
+}
+
+#games li {
+	margin-bottom: 10px;
+}
+
+#screenshots {
+	text-align: center;
+}
+
+#screenshot img{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#screenshots > img{
+	margin: 20px 30px;
+}
+
+#copyright {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #666;
+}
+
+.download{
+	background: green;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 5px 10px 4px 10px;
+	border-radius: 5px;
+	line-height: 61px;
+}
+
+.platform {
+	height: 50px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.platform img {
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-left: 20px;
+}
+
+.platform span {
+	float: left;
+	position: absolute;
+	left: 75px;
+	top: 50%;
+	height: 1em;
+	margin-top: -0.5em;
+}
+
+aside {
+	margin-top: -70px;
+}
+
+aside h1 {
+	margin-top: 70px;
+	margin-bottom: 20px;
+}
+

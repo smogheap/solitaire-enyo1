@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Solitaire</title>
+		<script type="text/javascript" src="AIRAliases.js"></script>
+
+		<script type="text/javascript">
+			/* Get console.log (and warn, error etc) to go to the right place */
+			function fixConsole() {
+				try {
+					if (air.Introspector.Console) {
+						console = air.Introspector.Console;
+
+						return(true);
+					}
+				} catch (e) {
+				}
+
+				return(false);
+			}
+
+			var console = {
+				log: function() {
+					if (fixConsole()) {
+						console.log(arguments);
+					}
+				},
+
+				info: function() {
+					if (fixConsole()) {
+						console.info(arguments);
+					}
+				},
+
+				error: function() {
+					if (fixConsole()) {
+						console.error(arguments);
+					}
+				},
+
+				warn: function() {
+					if (fixConsole()) {
+						console.warn(arguments);
+					}
+				}
+			};
+
+			/*
+				Add support for Object.keys() which is needed for enyojs
+
+				Based on: http://whattheheadsaid.com/2010/10/a-safer-object-keys-compatibility-implementation
+			*/
+			Object.keys = Object.keys || (function () {
+				var hasOwnProperty = Object.prototype.hasOwnProperty,
+					hasDontEnumBug = !{toString:null}.propertyIsEnumerable("toString"),
+					DontEnums = [
+						'toString',
+						'toLocaleString',
+						'valueOf',
+						'hasOwnProperty',
+						'isPrototypeOf',
+						'propertyIsEnumerable',
+						'constructor'
+					],
+					DontEnumsLength = DontEnums.length;
+
+				return function (o) {
+					if (typeof o != "object" && typeof o != "function" || o === null) {
+						throw new TypeError("Object.keys called on a non-object");
+					}
+
+					var result = [];
+					for (var name in o) {
+						if (hasOwnProperty.call(o, name)) {
+							result.push(name);
+						}
+					}
+
+					if (hasDontEnumBug) {
+						for (var i = 0; i < DontEnumsLength; i++) {
+							if (hasOwnProperty.call(o, DontEnums[i])) {
+								result.push(DontEnums[i]);
+							}
+						}
+					}
+
+					return result;
+				};
+			})();
+		</script>
+
+		<script src="enyo/framework/enyo.js" type="text/javascript"></script>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no height=device-height" />
+
+		<link rel="icon" type="image/png" href="icon-16x16.png" />
+	</head>
+
+	<body class="desktop" onLoad="appLoad()">
+		<script type="text/javascript">
+			net.minego.desktop	= true;
+			net.minego.chrome	= true;
+			net.minego.air		= true;
+
+			function appLoad() {
+				new net.minego.solitaire2().renderInto(document.body);
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget
+	xmlns="http://www.w3.org/ns/widgets"
+	xmlns:rim="http://www.blackberry.com/ns/widgets"
+	version="autoversion"
+>
+    <name>Solitaire Universe</name>
+    <description>A collection of many solitaire games</description>
+    <author rim:copyright="2012">Micah N Gorrell</author>
+
+	<rim:orientation mode="landscape" />
+	<feature id="blackberry.app.event" required="true" version="1.0.0" />
+
+	<feature id="blackberry.invoke" required="true" version="1.0.0" />
+	<feature id="blackberry.invoke.BrowserArguments" required="true" version="1.0.0" />
+	<feature id="blackberry.invoke.MessageArguments" required="true" version="1.0.0" />
+
+    <icon src="icon-86x86.png"/>
+
+	<content src="index.html"/>
+
+	<!--
+	<content src="http://www.minego.net/SolitaireUniverse/index.html" />
+	<access uri="*" subdomains="true" />
+	-->
+</widget>
+
